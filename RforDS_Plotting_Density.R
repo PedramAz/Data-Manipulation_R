@@ -1,3 +1,4 @@
+# Plotting in R
 data <- iris
 colnames(data)
 summary(data)
