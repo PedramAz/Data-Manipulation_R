@@ -25,7 +25,7 @@ scatterplotMatrix(data, regLine = list(col="green"), pch = 1,
 
 # Density scatterplot 
 library(hexbin)
-bin<-hexbin(data$Sepal.Length, data$Petal.Length, xbins = 10)
+bin<-hexbin(data$Sepal.Length, data$Petal.Length, xbins = 30)
 summary(bin)
 plot(bin, xlab = "Sepal Length", ylab = "Petal Length")
 
