@@ -6,8 +6,13 @@ summary(data)
 plot(data$Petal.Length ~ data$Sepal.Length)
 reg1 <- lm(data$Petal.Length ~ data$Sepal.Length)
 abline(reg1, col="red")
-
 abline(lm(data$Petal.Length ~ data$Sepal.Length), col="red")
+summary(reg1)
+
+# plot residuals, Normal QQ, Scale location and Residuals vs leverage for the model
+par(mfrow = c(2, 2))
+plot(reg1)
+
 # Lowess line 
 # A lowess line is a smoothed line calculated using locally weighted polynomial regression
 plot(data$Petal.Length ~ data$Sepal.Length)
